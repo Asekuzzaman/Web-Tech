@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form - AIUB</title>
+
+    <meta name="author" content="Sabbir">
+    <meta name="description" content="AIUB University Admission Form created for Web Technologies Lab Task 02">
+    <meta name="keywords" content="AIUB, Admission Form, University, Web Technologies">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            background: #003366;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        fieldset {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #003366;
+            border-radius: 5px;
+            background: #ffffff;
+        }
+        legend {
+            font-weight: bold;
+            color: #003366;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .btn-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn-group input {
+            width: 150px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            background: #003366;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-group input:hover {
+            background: #0055aa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AIUB University Admission Form</h1>
+
+    <form>
+
+        <!--PERSONAL INFORMATION-->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required maxlength="50">
+
+            <label>Father's Name:</label>
+            <input type="text" name="fathername" required maxlength="50">
+
+            <label>Mother's Name:</label>
+            <input type="text" name="mothername" required maxlength="50">
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="text" name="phone" required maxlength="15">
+        </fieldset>
+
+        <!--ACADEMIC INFORMATION-->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label>SSC Result (GPA):</label>
+            <input type="text" name="ssc" required maxlength="5">
+
+            <label>HSC Result (GPA):</label>
+            <input type="text" name="hsc" required maxlength="5">
+
+            <label>Passing Year (HSC):</label>
+            <input type="number" name="hsc_year" min="2000" max="2030" required>
+
+            <label>Preferred Department:</label>
+            <select name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="CS">CS</option>
+                <option value="CIS">CIS</option>
+                <option value="Software Engineering">Software Engineering</option>
+            </select>
+
+            <label>Interests (Choose multiple):</label>
+            <input type="checkbox" name="interests" value="Programming"> Programming
+            <input type="checkbox" name="interests" value="AI"> Artificial Intelligence
+            <input type="checkbox" name="interests" value="Robotics"> Robotics
+            <input type="checkbox" name="interests" value="Web"> Web Development
+
+        </fieldset>
+
+        <!--DOCUMENT UPLOAD-->
+        <fieldset>
+            <legend>Document Upload</legend>
+
+            <label>Upload Recent Photograph:</label>
+            <input type="file" name="photo" required>
+
+            <label>Upload Academic Transcript:</label>
+            <input type="file" name="transcript" required>
+
+            <label>Upload Resume (Optional):</label>
+            <input type="file" name="resume">
+        </fieldset>
+
+        <!--BUTTONS-->
+        <div class="btn-group">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
