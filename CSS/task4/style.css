@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Product Card */
+.product-box {
+    display: inline-block;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Product Image */
+.product-box img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Hover Outline Effect */
+.product-box:hover {
+    outline: 3px solid #0077ff;
+    outline-offset: 5px;
+}
+
+/* Price Styling */
+.price {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Buy Now Button */
+.buy-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #005fcc;
+}

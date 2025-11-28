@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f8;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 300px;      /* Fixed width */
+    height: 200px;     /* Fixed height */
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Overflow: visible (default) */
+/* Content that overflows is fully visible outside the box */
+.visible {
+    overflow: visible;
+}
+
+/* Overflow: hidden */
+/* Content that overflows is clipped and hidden */
+.hidden {
+    overflow: hidden;
+}
+
+/* Overflow: scroll */
+/* Always shows scrollbars, even if content fits */
+.scroll {
+    overflow: scroll;
+}
+
+/* Overflow: auto */
+/* Shows scrollbars only if content overflows */
+.auto {
+    overflow: auto;
+}
+
+/* Optional heading styling */
+.box h3 {
+    margin-top: 0;
+    color: #004aad;
+    font-size: 1.1em;
+}

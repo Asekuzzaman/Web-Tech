@@ -1,0 +1,77 @@
+/* Basic Page Font */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f0f4ff;
+}
+
+/* Unique Glassmorphic Fixed Contact Widget */
+.contact-widget-unique {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 220px;
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 16px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+
+    box-shadow: 
+        0 0 10px rgba(0,0,0,0.20),
+        0 0 18px rgba(0, 140, 255, 0.35);
+
+    z-index: 9999;
+    text-align: center;
+
+    transition: all 0.35s ease-in-out;
+}
+
+/* Hover Effects: Scaling + Neon Glow */
+.contact-widget-unique:hover {
+    transform: scale(1.07);
+    box-shadow: 
+        0 0 12px rgba(0,0,0,0.25),
+        0 0 22px rgba(0, 170, 255, 0.65);
+    cursor: pointer;
+}
+
+/* Title Style */
+.cw-header {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #004c9b;
+}
+
+/* Line Separator */
+.cw-line {
+    width: 60%;
+    height: 2px;
+    background: rgba(0, 102, 204, 0.7);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Information */
+.cw-info {
+    margin: 10px 0;
+    font-size: 0.95em;
+    color: #003f7d;
+}
+
+/* Email Link */
+.cw-email {
+    text-decoration: none;
+    font-weight: bold;
+    color: #005bce;
+
+    transition: color 0.3s;
+}
+
+/* Hover Email */
+.cw-email:hover {
+    color: #003c93;
+}

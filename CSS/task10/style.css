@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Red box */
+.red {
+    background-color: #e74c3c;
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Swap this value to change layering */
+}
+
+/* Blue box */
+.blue {
+    background-color: #3498db;
+    top: 100px;
+    left: 100px;
+    z-index: 3; /* Swap this value to see effect */
+}
+
+/* Green box */
+.green {
+    background-color: #2ecc71;
+    top: 150px;
+    left: 150px;
+    z-index: 2; /* Swap this value to see effect */
+}
+
+/* Optional paragraph styling */
+p {
+    margin-top: 350px; /* ensure it’s below the overlapping boxes */
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
