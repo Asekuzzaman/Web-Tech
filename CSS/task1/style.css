@@ -1,0 +1,57 @@
+/* Page Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Box */
+.profile-box {
+    width: 50%;
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  /* Makes image round */
+    margin-bottom: 15px;
+}
+
+/* Name */
+.name {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Bio */
+.bio {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    margin-top: 20px;
+}
